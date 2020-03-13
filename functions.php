@@ -38,4 +38,26 @@ function instagram_widget_init() {
 
 }
 add_action( 'widgets_init', 'instagram_widget_init' );
+
+function testimonials_init() {
+
+	register_sidebar( array(
+		'name'          => 'testimonials',
+		'id'            => 'testimonials',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
+
+}
+add_action( 'widgets_init', 'testimonials_init' );
+
+
+
+
+
+
+
+
 ?>

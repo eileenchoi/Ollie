@@ -1,4 +1,17 @@
 
+// Layout
+$max-width: $max-width;
+$section-margin: 7rem;
+$section-padding: 7rem;
+
+// Styles
+$black: #231F20;
+$green: #006738;
+$gold: #C0AF00;
+
+$gray: #D3D3D3;
+
+$border-radius: 5px;
 
 
 .col-full{
@@ -45,6 +58,7 @@
     }
 
     .product{
+       
         max-width: 33.333%;
         align-items: center;
         display: flex;
@@ -58,6 +72,7 @@
         }
 
         .product-img{
+            @include box-shadow;
             border: 1px solid $gray;
             border-radius: $border-radius;
             margin-bottom: 1rem;
@@ -118,7 +133,11 @@
 // *--------------------------*
 
 .instagram-container{
-    border: 2px solid blue;
+
+        .insta-header h2{
+            text-align: center;
+            margin-bottom: 2rem;
+        }
 }
 
 .right-sidebar .widget-area{
@@ -126,3 +145,67 @@
     float: none;
     margin: 0;
 }
+
+// *--------------------------*
+// Reviews
+// *--------------------------*
+
+.reviews-container{
+
+    h2{
+        text-align: center;
+    }
+
+    .reviews-inner{
+        display: flex;
+        
+
+        .reviews{
+            border: 1px solid $gray;
+            width: calc(33.33% - 4rem);
+            margin: 2rem;
+            padding: 2rem;
+            border-radius: $border-radius;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            p{
+                margin: 0;
+            }
+
+            .customer-name::before{
+                content: '- ';
+            }
+
+            .customer-name{
+                font-weight: 700;
+                margin-top: 10px;
+            }
+
+            .reviews-product{
+                margin-top: 2rem;
+                // border: 1px solid $gray;
+                
+                padding: 1rem;
+                border-radius: $border-radius;
+
+                .image-container{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    img{
+                        width: 100px;
+                    }
+                }
+
+                p{
+                    margin-left: 1rem;
+                }
+            }
+           
+        }
+    }
+}
+

@@ -98,6 +98,68 @@ get_header(); ?>
                 </div><!-- #primary-sidebar -->
                 <?php endif; ?>
             </div>
+
+            <!-- Reviews -->
+            <div class="reviews-container">
+                <h2><?php the_field('reviews_section_title') ?></h2>
+                <div class="reviews-inner">
+                    <div class="review-1 reviews">
+                        <div class="reviews-text">
+                            <p><?php the_field('review_1'); ?></p>
+                            <p class="customer-name"><?php the_field('review_name_1'); ?><p>
+                        </div>
+                        <div class="reviews-product">
+                                <div class="image-container">
+                                    <?php 
+                                        $image = get_field('product_image_1');
+                                        if( !empty( $image ) ): ?>
+                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                    <?php endif; ?>
+                                    <a href="/shop"><button>Shop Now</button></a>
+                                </div>
+                                <p><?php the_field('product_name_1'); ?></p>
+                            </div>
+                        </div><!-- Review 3 -->
+                    
+                    <!-- Review 2 -->
+                    <div class="review-2 reviews">
+                        <div class="reviews-text">
+                            <p><?php the_field('review_2'); ?></p>
+                            <p class="customer-name"><?php the_field('review_name_2'); ?><p>
+                        </div>
+                        <div class="reviews-product">
+                                <div class="image-container">
+                                    <?php 
+                                        $image = get_field('product_image_2');
+                                        if( !empty( $image ) ): ?>
+                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                    <?php endif; ?>
+                                    <a href="/shop"><button>Shop Now</button></a>
+                                </div>
+                                <p><?php the_field('product_name_2'); ?></p>
+                            </div>
+                        </div><!-- Review 2 -->
+
+                    <!-- Review 3 -->
+                    <div class="review-3 reviews">
+                        <div class="reviews-text">
+                            <p><?php the_field('review_3'); ?></p>
+                            <p class="customer-name"><?php the_field('review_name_3'); ?><p>
+                        </div>
+                        <div class="reviews-product">
+                                <div class="image-container">
+                                    <?php 
+                                        $image = get_field('product_image_3');
+                                        if( !empty( $image ) ): ?>
+                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                    <?php endif; ?>
+                                    <a href="/shop"><button>Shop Now</button></a>
+                                </div>
+                                <p><?php the_field('product_name_3'); ?></p>
+                            </div>
+                        </div><!-- Review 3 -->
+                    </div> <!-- Reviews Inner -->
+                </div><!-- Reviews Container -->
         </main><!-- #main -->
     </div><!-- #primary -->
 
