@@ -1,26 +1,16 @@
 
-// Layout
-$max-width: $max-width;
-$section-margin: 7rem;
-$section-padding: 7rem;
-
-// Styles
-$black: #231F20;
-$green: #006738;
-$gold: #C0AF00;
-
-$gray: #D3D3D3;
 
 $border-radius: 5px;
 
 
 .col-full{
     max-width: $max-width;
+    
 }
 
 .fp-section{
     margin-bottom: $section-margin;
-    border-bottom: 1px solid $gray;
+    border-bottom: 1px solid $green;
     padding-bottom: $section-padding;
 }
 // *--------------------------*
@@ -72,8 +62,8 @@ $border-radius: 5px;
         }
 
         .product-img{
-            @include box-shadow;
-            border: 1px solid $gray;
+            // @include box-shadow;
+            border: 1px solid $gold;
             border-radius: $border-radius;
             margin-bottom: 1rem;
         }
@@ -161,7 +151,7 @@ $border-radius: 5px;
         
 
         .reviews{
-            border: 1px solid $gray;
+            border: 1px solid $gold;
             width: calc(33.33% - 4rem);
             margin: 2rem;
             padding: 2rem;

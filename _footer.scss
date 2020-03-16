@@ -1,4 +1,45 @@
 
-footer{
-    border: 2px solid;
+.site-footer{
+    background-color: #fff;
+    padding: 0;
+
+    .site-info{
+        padding: 1rem 0;
+    }
+}
+
+form{
+    .form-container{
+        display: flex;
+    }
+
+    input[type="text"]{
+        margin-right: 15px;
+
+    }
+
+  
+
+}
+
+.site-info{
+
+    .ollie{
+        float: left;
+    }
+
+    .upply{
+        float: right;
+        
+    }
+}
+.site-footer a:not(.button):not(.components-button){
+    text-decoration: none;
+}
+
+.footer-widget-1{
+    background-image: url('/wp-content/uploads/2020/03/molecule-1-light-4.png');
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: contain;
 }

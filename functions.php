@@ -55,9 +55,13 @@ add_action( 'widgets_init', 'testimonials_init' );
 
 
 
-
-
-
-
+function storefront_credit() {
+    ?>
+    <div class="site-info">
+		<p class="ollie">All Rights Reserved &copy; Oils O'Ollie <?php echo date_i18n( date('Y') ); ?>
+		<p class="upply">Built by <a href="https://upply.io">Upply.io</a></p>
+    </div>
+    <?php
+}
 
 ?>
